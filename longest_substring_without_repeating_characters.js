@@ -120,3 +120,5 @@ const lengthOfLongestSubstringIterV3 = function(str) {
 
 
 /// 好吧终于AC了……看看得分：37.47%啊哈哈哈，惨不忍睹啊
+// 看了一下solution，和我第三版的思路是一模一样的……不明白为什么我写个js版的得分这么低
+// solution里面提到一个词 sliding window (optimized)我觉得还挺形象的哈哈
