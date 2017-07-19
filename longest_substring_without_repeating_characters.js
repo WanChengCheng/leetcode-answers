@@ -86,7 +86,7 @@ const lengthOfLongestSubstringIter = function(str) {
   }
   console.info('result:', longest);
   return longest.length;
- };
+};
 
 /*
  * 不知道对没对，这个栈不溢出了，不过仍然超时了……
@@ -116,7 +116,7 @@ const lengthOfLongestSubstringIterV3 = function(str) {
     longest = sub;
   }
   return longest;
- };
+};
 
 
 /// 好吧终于AC了……看看得分：37.47%啊哈哈哈，惨不忍睹啊

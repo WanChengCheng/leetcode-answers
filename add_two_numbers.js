@@ -1,5 +1,7 @@
 /*
- * You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+ * You are given two non-empty linked lists representing two non-negative integers.
+ * The digits are stored in reverse order and each of their nodes contain a single digit.
+ * Add the two numbers and return it as a linked list.
  *
  * You may assume the two numbers do not contain any leading zero, except the number 0 itself.
  *
@@ -19,9 +21,9 @@
  * 把两个链表的节点对齐相加，然后有个需要注意的地方是需要处理进位。
  * 初始也想到用递归来做，尝试了几次以后调试出如下结果：
  */
-var addTwoNumbers = function(l1, l2) {
+let addTwoNumbers = function(l1, l2) {
   const add = function(a, b, bCarry) {
-    var carryOver = false;
+    let carryOver = false;
     a.val = a.val + (b ? b.val : 0) + (bCarry ? 1 : 0);
     if (a.val > 9) {
       carryOver = true;
@@ -52,11 +54,11 @@ var addTwoNumbers = function(l1, l2) {
  * 看了下，思路和我这个也差不多，这道题好像也没什么特别的。不过我这个实现写的不太好看，把传入的参数都给修改了，
  * 虽然能Accept但是看起来还是不太好。主要是为了省事儿，少用一个参数，下面写个非递归的版本吧。
  */
-var addTwoNumbersFinal = function(l1, l2) {
-  var result = new ListNode();
-  var l = l1, r = l2;
-  var c = result;
-  var carry = 0;
+let addTwoNumbersFinal = function(l1, l2) {
+  let result = new ListNode();
+  let l = l1, r = l2;
+  let c = result;
+  let carry = 0;
   while (l || r) {
     c.val = (l ? l.val || 0 : 0) + (r ? r.val || 0 : 0) + carry;
     if (c.val > 9) {
