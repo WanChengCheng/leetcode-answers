@@ -65,3 +65,12 @@ console.info(findMedianSortedArrays([], [2, 3]));
 // 恩，尝试了几次以后AC了，不过得分只有可怜的9.9%……等等，我把log去掉再提交一次。
 // 恩，立马就98.7%了。那这道题目看起来还是蛮简单的嘛哈哈。回去还能再写一题呢。
 // 等会儿看看别人是怎么写的。
+
+
+// 回家看了下，原来我没看清楚要求，题目希望的时间复杂度是O(log(m + n))，看来还有更加高效的办法。
+// 如果是log级别的复杂度，那么一定是能够快速的削减解空间。上面的实现，1个1个的选明显是不够的。
+const findMedianSortedArraysLog = (leftArray, rightArray) => {
+  //boshisoukan 
+};
+
+exports.findMedianSortedArraysLog = findMedianSortedArraysLog;

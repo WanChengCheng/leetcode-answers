@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -16,8 +16,8 @@
     "url": "https://github.com/WanChengCheng/leetcode-answers/issues"
   },
   "homepage": "https://github.com/WanChengCheng/leetcode-answers#readme",
-  "dependencies": {},
   "devDependencies": {
+    "ava": "^0.21.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.7.0"
