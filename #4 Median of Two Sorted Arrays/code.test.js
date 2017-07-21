@@ -2,7 +2,7 @@
 const test = require('ava');
 const {
   findMedianSortedArraysLog: calc,
-} = require('./median_of_two_sorted_arrays.js');
+} = require('./code.js');
 
 test('[], []', (t) => {
   t.is(calc([], []), null);
